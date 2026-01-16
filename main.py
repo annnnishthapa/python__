@@ -104,10 +104,122 @@ n = int(input("Enter the no: "))
 reverse = 0 
 
 while(n!=0):
+
     remainder = n % 10
     reverse = reverse * 10 + remainder
     n//= 10
      
 print(reverse)
 
+#palindrome problem 
+x =222
 
+original = x
+
+rev = 0
+
+while(x!=0):
+    remainder = x % 10
+    rev = rev * 10 + remainder
+    x//=10
+    
+if original== rev:
+    print("palindrome")
+
+else:
+    print("not palindrome")
+
+x = 22
+temp = x
+
+while(temp>0):
+    temp//=10
+
+print(temp)
+#armstrong numberr 
+x = 153 
+temp = x
+digits = 0
+while(temp>0):
+    digits+=1
+    temp//=10
+
+temp = x
+sum = 0
+while(temp>0):
+    remainder = temp % 10
+    sum +=remainder ** digits 
+    temp//=10
+if sum == x:
+    print("armstrong")
+else:
+    print("not armstrong")
+#prime number
+
+x = 67
+is_prime = True
+
+if x <= 10:
+    is_prime = False
+else:
+    for i in range(2, int(x**0.5)+1):
+        if x%i == 0:
+            is_prime =False
+            break
+if is_prime:
+    print("prime")
+
+#palindrome in a sentense
+x = "A man a plan a canal Panama"
+clean =""
+for ch in x:
+    if ch.isalnum():
+        clean = ch.lower()
+rev =""
+for ch in clean:
+    rev = ch + rev
+
+if rev==clean :
+    print("palindrome")
+else:
+    print("Not a palindrome")
+
+#longest word in a sentence
+
+x = "eddie ate dinamite good bye eddie"
+
+words = x.split()
+longest =""
+for i in words:
+    if len(i)>= len(longest):
+        longest = i
+    
+print(longest)
+#Anagram words
+x = "spar"
+y ="rasp"
+
+l = list(y)
+
+for ch in x:
+    if ch in l:
+        l.remove(ch)
+    else:
+        print('no')
+        break
+else:
+    print("yes")
+    
+if sorted(x)==sorted(y):
+    print("yes")
+else:
+    print("No")
+
+#uppercase the first word
+x = "spar them"
+y = x.split()
+upper = []
+for i in y:
+   upper.append(i[0].upper() + i[1:])
+
+print(upper)
