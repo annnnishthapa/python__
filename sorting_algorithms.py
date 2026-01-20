@@ -10,6 +10,7 @@ def bubble_sort(arr):
 #insertion sort
 def insertion_sort(arr):
     n = len(arr)
+
     for i in range(1,n):
         key = arr[i]
         j = i - 1
@@ -22,3 +23,32 @@ def insertion_sort(arr):
 x=[9,4,2,6,1,3]
 print(bubble_sort(x))
 print(insertion_sort(x))
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+        
+    mid = len(arr)//2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    
+    return merge(left,right)
+
+def merge(left, right):
+    result = []
+    i = j = 0
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i+= 1
+        else:
+            result.append(right[j])
+            j+= 1
+    
+    result.extend(left[i:])
+    result.extend(right[j:])
+    
+    return result
+
+result = merge_sort(x)
+
+print(result)
