@@ -223,3 +223,33 @@ for i in y:
    upper.append(i[0].upper() + i[1:])
 
 print(upper)
+result = " ".join(upper)
+print(result)
+#count upper and lowercase
+x = "spar them"
+uppercount = 0
+lowercount = 0
+for i in x:
+    if i.isupper():
+        uppercount += 1
+    else:
+        lowercount += 1
+
+print("uppercount = ",uppercount, "lowercase= " , lowercount)
+#min and max in a list
+x =[1,2,3,4,5,6]
+min  = 0
+max  = 0
+for i in x:
+    if i < min:
+         min = i
+    else:
+         max = i
+
+print("max : ", max)
+print("min : ", min)
+
+min = min(x)
+max = max(x)
+print("max : ",max)
+print("min : ",min)

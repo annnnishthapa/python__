@@ -1,0 +1,113 @@
+🟣 DAY 4 – Lists & Tuples
+
+Find max & min
+
+Sum of elements
+
+Remove duplicates
+
+Sort without sort()
+
+Second largest number
+
+Merge two lists
+
+Find common elements
+
+Rotate list
+
+Count occurrences
+
+Convert list → tuple & tuple → list
+
+🔴 DAY 5 – Functions & Dictionaries
+
+Prime number function
+
+Generate primes up to n
+
+GCD & LCM
+
+Power function (no **)
+
+Recursive factorial
+
+Word frequency dictionary
+
+Student marks dictionary
+
+Highest & lowest scorer
+
+Merge dictionaries
+
+Sort dictionary by value
+
+⚫ DAY 6 – Files, OOP & Errors
+
+Read file content
+
+Write to file
+
+Count lines, words, characters
+
+Handle divide-by-zero error
+
+Create a class
+
+Student class with grade
+
+Bank account class
+
+Use constructor
+
+Method overriding
+
+Input validation
+
+🟠 DAY 7 – Algorithms & Mini Projects
+
+Linear search
+
+Binary search
+
+Bubble sort
+
+Selection sort
+
+Two-sum problem
+
+Matrix addition
+
+Matrix multiplication
+
+Password strength checker
+
+Number guessing game
+
+Mini project: To-Do / Quiz / Calculator
+
+🔥 Rules to Follow
+
+❌ No copying solutions
+
+✅ Use functions
+
+✅ Add comments
+
+✅ Test edge cases
+
+🚀 After 7 Days You Will:
+
+✔ Think like a programmer
+✔ Be ready for interviews
+✔ Start Django & AI confidently
+
+If you want, I can:
+
+📘 Provide solutions day-by-day
+
+🧠 Convert this into interview practice
+
+🧩 Make it into a printable checklist
+
+Just say the word 💪
