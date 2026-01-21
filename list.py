@@ -32,4 +32,34 @@ for i in x:
         second_largest = i
 
 print(second_largest)
-       
+#merging two list
+
+def merge_list(l1,l2):
+    new_list = []
+    i = j = 0
+    while i < len(l1) and j < len(l2):
+        if l1[i]==l2[j]:
+            new_list.append(l1[i])
+            i+=1
+            j+=1
+        elif l1[i] <= l2[j]:
+            new_list.append(l1[i])
+            i+=1
+        else:
+            new_list.append(l2[j])
+            j+=1
+    while i < len(l1):
+        new_list.append(l1[i])
+        i+=1
+    while j < len(l2):
+        new_list.append(l2[j])
+        j+=1
+    return new_list
+
+a = [1,3,4,5,6]
+b = [5,7,8,9]  
+
+print(merge_list(a,b))
+    
+    
+    
