@@ -56,10 +56,31 @@ def merge_list(l1,l2):
         j+=1
     return new_list
 
-a = [1,3,4,5,6]
-b = [5,7,8,9]  
 
-print(merge_list(a,b))
+
+
+
+#common in two list:
+def common_elements(l1,l2):
+    common =[]
+    for i in l1:
+        if i in l2 and  i not in common:
+                common.append(i)
+    return common
+
+#rotate list
+def rotate(arr,n):
+    
+    for i in range(n):
+        temp = arr[-1]
+        for j in range(len(arr)-1,0,-1):
+            
+            arr[j] = arr[j-1]
+            
+        arr[0] = temp
+    return arr
+
+
     
     
     
